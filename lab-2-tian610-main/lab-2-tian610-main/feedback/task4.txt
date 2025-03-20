@@ -1,0 +1,6 @@
+Task 4
+building the exploit has passed
+test on executable stack has passed
+testing the content of the produced file has passed
+test on non-executable stack has passed
+mark for this task: 2.0 / 2.0

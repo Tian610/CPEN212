@@ -1,0 +1,62 @@
+Task 3
+test for compilation has passed
+test for correct length test 1 has passed
+test for correct length test 2 has passed
+test for correct length test 3 has passed
+test for correct length test 4 has passed
+test for correct length test 5 has passed
+test for wrong length (short) test 1 has passed
+test for wrong length (short) test 2 has passed
+test for wrong length (short) test 3 has passed
+test for wrong length (short) test 4 has passed
+test for wrong length (short) test 5 has passed
+test for wrong length (long) test 1 has passed
+test for wrong length (long) test 2 has passed
+test for wrong length (long) test 3 has passed
+test for wrong length (long) test 4 has passed
+test for wrong length (long) test 5 has passed
+test for checking letters test 1 has passed
+test for checking letters test 2 has failed
+test for checking letters test 3 has passed
+test for checking letters test 4 has failed
+test for checking letters test 5 has passed
+test for checking letters test 6 has failed
+test for checking letters test 7 has failed
+test for checking non-letters test 1 has passed
+test for checking non-letters test 2 has passed
+test for checking non-letters test 3 has passed
+test for checking non-letters test 4 has passed
+test for checking non-letters test 5 has passed
+test for checking non-letters test 6 has passed
+test for checking non-letters test 7 has passed
+test for checking non-letters test 8 has passed
+test for checking correct pattern test 1 has passed
+test for checking correct pattern test 2 has passed
+test for checking correct pattern test 3 has passed
+test for checking correct pattern test 4 has passed
+test for checking correct pattern test 5 has passed
+test for checking wrong pattern test 1 has passed
+test for checking wrong pattern test 2 has passed
+test for checking wrong pattern test 3 has passed
+test for checking wrong pattern test 4 has passed
+test for checking wrong pattern test 5 has passed
+test for checking correct hash test 1 has passed
+test for checking correct hash test 2 has passed
+test for checking correct hash test 3 has passed
+test for checking correct hash test 4 has passed
+test for checking correct hash test 5 has passed
+test for checking wrong hash test 1 has passed
+test for checking wrong hash test 2 has passed
+test for checking wrong hash test 3 has passed
+test for checking wrong hash test 4 has passed
+test for checking wrong hash test 5 has passed
+Minimum requirement for length check was met.
+Minimum requirement for hash check was met.
+Minimum requirement for pattern check was met.
+Minimum requirement for letters check was met.
+
+mark for this task: 2.81 / 3.0
+
+Note: Your task 3 didn't compile as you left a printf statement in there, I fixed it for you but that is a 10% deduction.
+
+mark with 10% penalty: 2.529 / 3.0

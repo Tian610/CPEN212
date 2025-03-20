@@ -1,0 +1,36 @@
+Task 2
+test for compilation has passed
+test for address of the first instruction in check1  has passed
+test for address of the first instruction in check2  has passed
+test for address of the first instruction in check3  has passed
+test for address of the first instruction in check4  has passed
+test for calling convention for reg x3  has passed
+test for calling convention for reg x4  has passed
+test for calling convention for reg x5  has passed
+test for calling convention for reg x6  has passed
+test for calling convention for reg x7  has passed
+test for calling convention for reg x9  has passed
+test for calling convention for reg x10  has passed
+test for calling convention for reg x11  has passed
+test for calling convention for reg x12  has passed
+test for calling convention for reg x13  has passed
+test for calling convention for reg x14  has passed
+test for calling convention for reg x15  has passed
+test for calling convention for reg x16  has passed
+test for calling convention for reg x17  has passed
+test for calling convention for reg x18  has passed
+test for calling convention for reg x19  has passed
+test for calling convention for reg x20  has passed
+test for calling convention for reg x21  has passed
+test for calling convention for reg x22  has passed
+test for calling convention for reg x23  has passed
+test for calling convention for reg x24  has passed
+test for calling convention for reg x25  has passed
+test for calling convention for reg x26  has passed
+test for calling convention for reg x27  has passed
+test for calling convention for reg x28  has passed
+test for calling convention for reg x29  has passed
+test for calling convention for reg x30  has passed
+Minimum requirement for register groups was met.
+
+mark for this task: 3.0 / 3.0

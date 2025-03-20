@@ -1,0 +1,9 @@
+Task 1
+test for start of program has passed
+test for start of function1 has failed
+test for end of function1 has failed
+test for start of function2 has failed
+test for end of function2 has failed
+test for number of arguments has passed
+test for first argument has passed
+mark for this task: 1.2 / 2.0

