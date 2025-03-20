@@ -1,0 +1,67 @@
+void cpen212_free(void *heap_handle, void *p) {
+
+    // Cast the heap_handle to a heap_state to retrieve metadata
+    heap_state *heap = (heap_state *)heap_handle;
+
+    block *prev = (block*) heap->heap_start;
+
+    while ((char*)prev < (char*)heap->heap_end) {
+        // Four unique scenarios to account for:
+        // (current here refers to the element we want to free)
+        // 1: prev and next are both free
+        // 2: prev is free
+        // 3: next is free
+        // 4: neither are free
+
+        block* current = (block *) ((char*) prev + (prev->size & ~1) + sizeof(block));
+        block* next = (block *) ((char*) current + (current->size & ~1) + sizeof(block));
+
+        if (!current) { 
+            return;
+        }
+
+        // Base Case: The first element is the one we're trying to free
+        if ((char*)prev + sizeof(block) == p) {
+            if (((current->size & 1) == 0)) {
+                prev->size &= ~1;
+                current->size &= ~1;
+                prev->size += current->size + sizeof(block);
+                return;
+            } else {
+                prev->size &= ~1;
+                return;
+            }
+        }
+        
+
+        if ((char*)current + sizeof(block) == p) {
+            // Prev and next are free: prev->size += current->size + next->size +2*sizeof(block)
+            if (((prev->size & 1) == 0) && ((next->size & 1) == 0)) {
+                prev->size &= ~1;
+                current->size &= ~1;
+                next->size &= ~1;
+                prev->size += current->size + next->size + 2*sizeof(block);
+                return;
+            // Prev is free: prev->size += current->size + sizeof(block)
+            } else if (((prev->size & 1) == 0)) {
+                prev->size &= ~1;
+                current->size &= ~1;
+                prev->size += current->size + sizeof(block);
+                return;
+            // Next is free: current->size += next->size + sizeof(block)
+            } else if (((next->size & 1) == 0)) {
+                current->size &= ~1;
+                next->size &= ~1;
+                current->size += next->size + sizeof(block);
+                return;
+            // Neither are free:
+            } else {
+                current->size &= ~1;                                                         // Set LSB to 0
+                return;
+            }
+        }
+
+        prev = (block *) ((char*) prev + (prev->size & ~1) + sizeof(block));        // Increment to next block
+    }
+    return;
+}
